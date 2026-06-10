@@ -1,0 +1,28 @@
+[
+    {
+        "name": "dheeraj",
+        "roll no": 123,
+        "marks":10
+    },
+    {
+        "name": "kunal",
+        "roll no": 1234,
+        "marks":20
+    },
+    {
+        "name": "abhishek",
+        "roll no": 12345,
+        "marks":30
+    },
+    {
+        "name": "praveen",
+        "roll no": 12356,
+        "marks":40
+    },
+    {
+        "name": "anjali",
+        "roll no": 1234567,
+        "marks":50
+    }
+]
+
