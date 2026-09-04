@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Result
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center">
+
+<h1>Prediction Result</h1>
+
+{% if prediction == 1 %}
+
+<div class="alert alert-danger mt-4">
+
+<h2>High Risk of Diabetes</h2>
+
+</div>
+
+{% else %}
+
+<div class="alert alert-success mt-4">
+
+<h2>Low Risk of Diabetes</h2>
+
+</div>
+
+{% endif %}
+
+<h4 class="mt-3">
+
+Confidence:
+{{ probability }}%
+
+</h4>
+
+<a href="/predict" class="btn btn-primary mt-4">
+Predict Again
+</a>
+
+</div>
+
+{% endblock %}

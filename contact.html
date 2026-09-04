@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Diabetes AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .contact-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .contact-container h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #111;
+        }
+
+        .contact-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-card h2 {
+            margin-top: 0;
+            color: #1565c0;
+            font-size: 28px;
+        }
+
+        .contact-item {
+            margin: 22px 0;
+            font-size: 18px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .contact-item a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .project-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f4f8fb;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+        .project-info h3 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            🩺 Diabetes AI
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/predict">Predict</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+
+        <h1>Contact</h1>
+
+        <div class="contact-card">
+
+            <h2>Developer</h2>
+
+            <div class="contact-item">
+                <strong>👤 Name</strong>
+                Vivek Mudgal
+            </div>
+
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+
+                <a href="mailto:your@email.com">
+                    Vivekmudgal52@email.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>💻 GitHub</strong>
+
+                <a href="https://github.com/vivtym"
+                   target="_blank">
+                    github.com/vivtym
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>📱 Phone</strong>
+                +91 89554 83307
+            </div>
+
+
+            <div class="project-info">
+
+                <h3>Diabetes Prediction AI</h3>
+
+                <p>
+                    If you have any questions, suggestions, or feedback
+                    about this project, feel free to contact me.
+                </p>
+
+                <p>
+                    This project is developed using Python, Flask,
+                    Pandas and Machine Learning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Diabetes Prediction AI
+    </footer>
+
+</body>
+
+</html>

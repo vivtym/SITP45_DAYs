@@ -1,0 +1,359 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    min-height:100vh;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    background:linear-gradient(90deg,#0d6efd,#0099ff);
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffe082 !important;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#00c6ff);
+    color:white;
+    padding:80px 30px;
+    border-radius:20px;
+    margin-top:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:20px;
+}
+
+.hero .btn{
+    margin-top:30px;
+    padding:14px 35px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card-body{
+    padding:30px;
+}
+
+.card h3{
+    color:#0d6efd;
+    font-weight:600;
+}
+
+/* ===========================
+   Prediction Form
+=========================== */
+
+form{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+label{
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.form-control{
+    border-radius:12px;
+    height:48px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn{
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0d6efd;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#0056d2;
+    transform:scale(1.05);
+}
+
+.btn-success:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Result Page
+=========================== */
+
+.alert{
+    border:none;
+    border-radius:18px;
+    padding:25px;
+}
+
+.alert-success{
+    background:#d1f7df;
+    color:#116530;
+}
+
+.alert-danger{
+    background:#ffd9d9;
+    color:#8b0000;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    margin-top:80px;
+    background:#111827;
+    color:white;
+    padding:25px;
+}
+
+/* ===========================
+   Section Titles
+=========================== */
+
+.section-title{
+    font-size:40px;
+    font-weight:700;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   About Page
+=========================== */
+
+.about-box{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+/* ===========================
+   Contact Page
+=========================== */
+
+.contact-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+/* ===========================
+   Icons
+=========================== */
+
+.icon{
+    font-size:55px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.fade-up{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   Prediction Card
+=========================== */
+
+.result-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+.result-card h2{
+    font-weight:700;
+}
+
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.stat-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.stat-card h2{
+    color:#0d6efd;
+    font-weight:700;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.btn{
+    width:100%;
+}
+
+form{
+    padding:20px;
+}
+
+}
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .card,
+.dark-mode form,
+.dark-mode .about-box,
+.dark-mode .contact-card{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode .form-control{
+    background:#2b2b2b;
+    color:white;
+    border-color:#444;
+}
+
+.dark-mode .navbar{
+    background:#000 !important;
+}
+
+.dark-mode footer{
+    background:#000;
+}
