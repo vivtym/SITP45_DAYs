@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Predict
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center mb-4">
+    Diabetes Prediction Form
+</h2>
+
+<form action="/result" method="POST">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+            <label>Pregnancies</label>
+            <input type="number" class="form-control" name="pregnancies" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Glucose</label>
+            <input type="number" class="form-control" name="glucose" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Blood Pressure</label>
+            <input type="number" class="form-control" name="blood_pressure" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Skin Thickness</label>
+            <input type="number" class="form-control" name="skin_thickness" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Insulin</label>
+            <input type="number" class="form-control" name="insulin" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>BMI</label>
+            <input type="number" step="0.1" class="form-control" name="bmi" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Diabetes Pedigree Function</label>
+            <input type="number" step="0.001" class="form-control" name="dpf" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label>Age</label>
+            <input type="number" class="form-control" name="age" required>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-3">
+        <button type="submit" class="btn btn-success btn-lg">
+            Predict
+        </button>
+    </div>
+
+</form>
+
+{% endblock %}

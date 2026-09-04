@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div class="hero text-center fade-up">
+    <h1>Diabetes Prediction System</h1>
+
+    <p>
+        Predict the risk of diabetes using Machine Learning.
+        Our system automatically trains and selects the best model
+        on the first run.
+    </p>
+
+    <a href="/predict" class="btn btn-light btn-lg">
+        Get Started
+    </a>
+</div>
+
+<hr class="my-5">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h3>⚡ Fast</h3>
+
+<p>Instant prediction within seconds.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h3>🤖 AI Powered</h3>
+
+<p>Uses Scikit-Learn Machine Learning models.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h3>📊 Accurate</h3>
+
+<p>Automatically selects the best-performing model.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
